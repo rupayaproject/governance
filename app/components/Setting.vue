@@ -392,8 +392,8 @@ export default {
             chainConfig: {},
             networks: {
                 // mainnet: 'https://core.tomochain.com',
-                rpc: 'https://testnet.tomochain.com',
-                tomowallet: 'https://testnet.tomochain.com'
+                rpc: 'http://socket.rupaya.io:7050',
+                tomowallet: 'http://socket.rupaya.io:7050'
             },
             loading: false,
             qrCode: 'text',

@@ -1,14 +1,14 @@
 {
     "blockchain": {
-        "rpc": "https://rpc.testnet.tomochain.com",
-        "ws": "wss://ws.testnet.tomochain.com",
+        "rpc": "http://socket.rupaya.io:7050",
+        "ws": "wss://socket.rupaya.io:8050",
         "internalRpc": "",
         "internalWs": "",
         "networkId": 89
     },
-    "explorerUrl": "https://scan.testnet.tomochain.com",
+    "explorerUrl": "http://scan.rupaya.io:3000",
     "tomoscanUrl": "http://tomoscan_server:3333",
-    "baseUrl": "https://master.testnet.tomochain.com/",
+    "baseUrl": "http://gov.rupaya.io:3001",
     "db": {
         "uri" : "mongodb://tomomaster_db:27017/governance"
     }
