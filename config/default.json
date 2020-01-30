@@ -11,7 +11,7 @@
     ],
     "blockchain": {
         "rpc": "https://socket.rupaya.io",
-        "ws": "ws://ws.rupaya.io",
+        "ws": "ws://ws.rupaya.io/ws/",
         "internalRpc": "",
         "internalWs": "",
         "networkId": 308,

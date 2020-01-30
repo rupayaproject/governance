@@ -313,7 +313,7 @@
                                 </li>
                                 <li class="list-inline-item">
                                     <a
-                                        href="https://www.facebook.com/tomochainofficial"
+                                        href="https://www.facebook.com/rupayacoin"
                                         target="_blank">
                                         <i class="tm-facebook" />
                                     </a>
