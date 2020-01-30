@@ -86,7 +86,7 @@
                                                     </router-link>]
                                                     has been slashed
                                                 </span>
-                                                <div class="notification_body__time">TomoMaster -
+                                                <div class="notification_body__time">Governance -
                                                     {{ value.createdAt }}</div>
                                             </div>
                                         </b-dropdown-text>
@@ -106,7 +106,7 @@
                                                     </router-link>]
                                                     left the top 150 and is no longer a masternode.
                                                 </span>
-                                                <div class="notification__time">TomoMaster -
+                                                <div class="notification__time">Governance -
                                                     {{ value.createdAt }}</div>
                                             </div>
                                         </b-dropdown-text>
@@ -125,7 +125,7 @@
                                                     Its time to gather votes from community by promoting it and
                                                     be in top 150 to get your first reward.
                                                 </span>
-                                                <div class="notification__time">TomoMaster -
+                                                <div class="notification__time">Governance -
                                                     {{ value.createdAt }}</div>
                                             </div>
                                         </b-dropdown-text>
@@ -144,7 +144,7 @@
                                                         <span class="masternode-name">{{ value.name }}</span>
                                                     </router-link>] resigned
                                                 </span>
-                                                <div class="notification__time">TomoMaster -
+                                                <div class="notification__time">Governance -
                                                     {{ value.createdAt }}</div>
                                             </div>
                                         </b-dropdown-text>
@@ -160,7 +160,7 @@
                                                     <span class="notification_label withdraw">Withdraw</span>
                                                     {{ value.amount }} unvoted TOMO are ready to withdraw
                                                 </span>
-                                                <div class="notification__time">TomoMaster -
+                                                <div class="notification__time">Governance -
                                                     {{ value.createdAt }}</div>
                                             </div>
                                         </b-dropdown-text>
@@ -174,7 +174,7 @@
                                     class="notification_body">
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.6.1</strong>
+                                            <strong>Governance up to 1.6.1</strong>
                                             <p>- Add check owner address</p>
                                             <p>- Clean unused libraries</p>
                                             <p>- Update webpack</p>
@@ -183,7 +183,7 @@
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.6.0</strong>
+                                            <strong>Governance up to 1.6.0</strong>
                                             <p>- Add Auto tweeting when a new candidate is proposed</p>
                                             <p>- Update searching</p>
                                             <p>- Add top page pagination on small screen</p>
@@ -193,7 +193,7 @@
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.5.2</strong>
+                                            <strong>Governance up to 1.5.2</strong>
                                             <p>- Hide latest signed block for proposed masternode</p>
                                             <p>- Refactor code</p>
                                         </div>
@@ -201,7 +201,7 @@
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.5.1</strong>
+                                            <strong>Governance up to 1.5.1</strong>
                                             <p>- Hide staking ROI if a masternode out of top 150</p>
                                             <p>- Fix missing latest reward record</p>
                                         </div>
@@ -209,7 +209,7 @@
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.5.0</strong>
+                                            <strong>Governance up to 1.5.0</strong>
                                             <p>- Display average ROI for masternode owner and voter</p>
                                             <p>- Display owner ROI and voter ROI in masternode detail page</p>
                                             <p>- Add withdrawal notification</p>
@@ -219,7 +219,7 @@
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.4.3</strong>
+                                            <strong>Governance up to 1.4.3</strong>
                                             <p>- Fix id injection issue</p>
                                         </div>
                                     </b-dropdown-text>
@@ -229,7 +229,7 @@
                                 <b-dropdown-text
                                     v-if="!isTomonet"
                                     class="notification_bottom">
-                                    TomoMaster - {{ version }}
+                                    Governance - {{ version }}
                                 </b-dropdown-text>
                             </b-dropdown>
                             <b-dropdown
@@ -271,9 +271,9 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="tomo-footer__copyright">
-                                TomoMaster &copy; {{ (new Date()).getFullYear() }} -
+                                Governance &copy; {{ (new Date()).getFullYear() }} -
                                 <a
-                                    :href="`https://github.com/tomochain/tomomaster/releases/tag/v${version}`"
+                                    :href="`https://github.com/rupayaproject/governance/releases/tag/v${version}`"
                                     class="version-tag">
                                     v{{ version }}</a>
                             </div>
@@ -306,7 +306,7 @@
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a
-                                        href="https://t.me/tomochain"
+                                        href="https://t.me/rupayaproject"
                                         target="_blank">
                                         <i class="tm-telegram" />
                                     </a>
@@ -320,21 +320,21 @@
                                 </li>
                                 <li class="list-inline-item">
                                     <a
-                                        href="https://twitter.com/TomoChainANN"
+                                        href="https://twitter.com/rupayacoin"
                                         target="_blank">
                                         <i class="tm-twitter" />
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a
-                                        href="https://github.com/tomochain/"
+                                        href="https://github.com/rupayaproject/"
                                         target="_blank">
                                         <i class="tm-github" />
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a
-                                        href="https://www.reddit.com/r/Tomochain/"
+                                        href="https://www.reddit.com/r/Rupayacoin/"
                                         target="_blank">
                                         <i class="tm-reddit" />
                                     </a>
@@ -357,7 +357,7 @@ import AutoComplete from './components/AutoComplete.vue'
 export default {
     name: 'App',
     metaInfo: {
-        title: 'TomoChain Governance DApp | TomoMaster',
+        title: 'Rupaya Governance DApp | Governance',
         meta: [
             { name: 'description', content: 'Tomomaster - Providing a professional UI which allows coin-holders to stake for masternodes, decentralized governance and explore masternode performance statistics' } // eslint-disable-line
         ]

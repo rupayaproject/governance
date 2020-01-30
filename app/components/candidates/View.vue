@@ -448,10 +448,10 @@
                         <a
                             v-b-tooltip.hover.right
                             :href="`${config.explorerUrl}/txs/${data.item.tx}`"
-                            title="View on TomoScan"
+                            title="View on Scan"
                             target="_blank">
                             <i class="tm-eye" />
-                            <span>View on TomoScan</span>
+                            <span>View on Scan</span>
                         </a>
                     </template>
                 </b-table>
@@ -478,9 +478,9 @@ import store from 'store'
 export default {
     name: 'App',
     metaInfo: {
-        title: 'Candidate Details | TomoMaster',
+        title: 'Candidate Details | Governance',
         meta: [
-            { name: 'description', content: 'Staking TomoChain Masternode to get the reward every epochs. You can use mobile, desktop, hardware wallet - ledger nano, trezor to stake TomoChain' } // eslint-disable-line
+            { name: 'description', content: 'Staking Rupaya Masternode to get the reward every epochs. You can use mobile, desktop, hardware wallet - ledger nano, trezor to stake Rupaya' } // eslint-disable-line
         ]
     },
     components: {

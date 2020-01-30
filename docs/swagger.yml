@@ -1,14 +1,14 @@
 swagger: '2.0'
 info:
   version: 1.3.3
-  title: TomoMaster APIs
-  description: Happy to code TomoMaster APIs
+  title: Governance APIs
+  description: Happy to code Governance APIs
   license:
     name: Github
     url: 'https://github.com/tomochain/tomomaster'
 tags:
   - name: Config
-    description: Get TomoMaster Application Configuration
+    description: Get Governance Application Configuration
   - name: Candidates
     description: Get Candidates information
   - name: Voters
@@ -29,7 +29,7 @@ paths:
     get:
       tags:
         - Config
-      summary: Get TomoMaster Application Configuration
+      summary: Get Governance Application Configuration
       responses:
         '200':
           description: OK

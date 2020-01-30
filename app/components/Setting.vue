@@ -158,7 +158,7 @@
                             or try path <code
                                 class="hd-path"
                                 @click="changePath(`m/44'/889'/0'/0`)">m/44'/889'/0'/0</code>
-                            with TomoChain App (on Ledger).</small>
+                            with Rupaya App (on Ledger).</small>
                     </b-form-group>
 
                     <b-form-group
@@ -392,8 +392,8 @@ export default {
             chainConfig: {},
             networks: {
                 // mainnet: 'https://core.tomochain.com',
-                rpc: 'http://socket.rupaya.io:7050',
-                tomowallet: 'http://socket.rupaya.io:7050'
+                rpc: 'https://socket.rupaya.io',
+                tomowallet: 'https://wallet.rupaya.io'
             },
             loading: false,
             qrCode: 'text',

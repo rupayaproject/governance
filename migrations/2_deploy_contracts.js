@@ -16,16 +16,16 @@ if (config.has('truffle')){
 module.exports = function(deployer) {
 
     let candidates = [
-        '0xf99805B536609cC03AcBB2604dFaC11E9E54a448',
-        '0x31b249fE6F267aa2396Eb2DC36E9c79351d97Ec5',
-        '0xfC5571921c6d3672e13B58EA23DEA534f2b35fA0'
+        '0x699a4f11c263f44f81cb59959c2e8ac97c81708c',
+        '0x5e012b85e7015eed374f3e3f888c72f94bc5f041',
+        '0x635154d0707db22bee136256588ed23659b4c3a3'
     ]
     let caps = [
         '50000000000000000000000',
         '50000000000000000000000',
         '50000000000000000000000'
     ]
-    let firstOwner = '0x487d62d33467c4842c5e54Eb370837E4E88BBA0F'
+    let firstOwner = '0xe4fe4385cebf8066f8e0df6c399c1f2ed94bf66d'
     return deployer.deploy(TomoValidator, candidates, caps, firstOwner, minCandidateCap, minVoterCap, maxValidatorNumber, candidateWithdrawDelay, voterWithdrawDelay).then((tv) => {
         return  deployer.deploy(TomoRandomize)
     }). then(() => {
