@@ -158,7 +158,7 @@
                                                     'font-weight: bold;'"
                                                     class="notification__content">
                                                     <span class="notification_label withdraw">Withdraw</span>
-                                                    {{ value.amount }} unvoted TOMO are ready to withdraw
+                                                    {{ value.amount }} unvoted RUPX are ready to withdraw
                                                 </span>
                                                 <div class="notification__time">Governance -
                                                     {{ value.createdAt }}</div>
@@ -359,7 +359,7 @@ export default {
     metaInfo: {
         title: 'Rupaya Governance DApp | Governance',
         meta: [
-            { name: 'description', content: 'Tomomaster - Providing a professional UI which allows coin-holders to stake for masternodes, decentralized governance and explore masternode performance statistics' } // eslint-disable-line
+            { name: 'description', content: 'Governance - Providing a professional UI which allows coin-holders to stake for masternodes, decentralized governance and explore masternode performance statistics' } // eslint-disable-line
         ]
     },
     components: {

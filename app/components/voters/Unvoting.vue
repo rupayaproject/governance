@@ -31,7 +31,7 @@
                             <h4 class=" color-white tomo-card__title tomo-card__title--big">Unvote
                                 <span
                                     class="tomo-card__subtitle">
-                                    Your TOMO will be locked in a duration after unvoting</span>
+                                    Your RUPX will be locked in a duration after unvoting</span>
                             </h4>
                             <ul class="tomo-list list-unstyled">
                                 <li class="tomo-list__item">
@@ -69,7 +69,7 @@
                                 novalidate
                                 @submit.prevent="validate()">
                                 <b-form-group
-                                    :description="`The amount of TOMO to unvote. TX fee: ${txFee} TOMO`"
+                                    :description="`The amount of RUPX to unvote. TX fee: ${txFee} RUPX`"
                                     label="Amount"
                                     label-for="unvote-value">
                                     <b-input-group>
@@ -91,14 +91,14 @@
                                             class="text-danger">Must be number </span>
                                         <!-- <span
                                             v-else-if="isMin"
-                                            class="text-danger">Minimum of unvoting is 100 TOMO </span> -->
+                                            class="text-danger">Minimum of unvoting is 100 RUPX </span> -->
                                         <span
                                             v-else-if="isMax"
                                             class="text-danger">
-                                            Must be less than {{ limitedUnvote }} TOMO </span>
+                                            Must be less than {{ limitedUnvote }} RUPX </span>
                                         <span
                                             v-else-if="!isEnoughTomo"
-                                            class="text-danger">Voted amount left should not less than 100 TOMO </span>
+                                            class="text-danger">Voted amount left should not less than 100 RUPX </span>
                                     </b-input-group>
                                 </b-form-group>
                                 <div class="buttons text-right">
@@ -434,7 +434,7 @@ export default {
             self.id = generatedMess.data.id
 
             self.qrCode = encodeURI(
-                'tomochain:unvote?amount=' + amount + '&' + 'candidate=' + self.candidate +
+                'rupaya:unvote?amount=' + amount + '&' + 'candidate=' + self.candidate +
                 '&name=' + generatedMess.data.candidateName +
                 '&submitURL=' + generatedMess.data.url
             )

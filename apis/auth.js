@@ -11,7 +11,7 @@ const { check, validationResult, query } = require('express-validator/check')
 
 router.get('/generateLoginQR', async (req, res, next) => {
     try {
-        const message = '[Tomomaster ' + (new Date().toLocaleString().replace(/['"]+/g, '')) + '] Login'
+        const message = '[Governance ' + (new Date().toLocaleString().replace(/['"]+/g, '')) + '] Login'
         const id = uuidv4()
         res.send({
             message,

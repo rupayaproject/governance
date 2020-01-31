@@ -1,7 +1,7 @@
 {
     "blockchain": {
         "rpc": "http://socket.rupaya.io:7050",
-        "ws": "wss://testnet.tomochain.com/ws",
+        "ws": "wss://testnet.rupaya.io/ws",
         "internalRpc": "",
         "internalWs": "",
         "networkId": 89

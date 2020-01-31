@@ -211,7 +211,7 @@
 export default {
     data: () => {
         return {
-            email: 'admin@tomochain.com'
+            email: 'admin@rupaya.io'
         }
     }
 }

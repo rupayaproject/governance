@@ -65,7 +65,7 @@ Vue.use(Toasted, {
 
 // set trezor's manifest
 TrezorConnect.manifest({
-    email: 'admin@tomochain.com',
+    email: 'admin@rupaya.io',
     appUrl: 'https://gov.rupaya.io'
 })
 
@@ -344,7 +344,7 @@ getConfig().then((config) => {
     localStorage.set('configMaster', config)
     Vue.use(VueAnalytics, {
         id: config.GA,
-        linkers: ['tomochain.com'],
+        linkers: ['rupaya.io'],
         router,
         autoTraking: {
             screenView: true

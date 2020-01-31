@@ -5,7 +5,7 @@ info:
   description: Happy to code Governance APIs
   license:
     name: Github
-    url: 'https://github.com/tomochain/tomomaster'
+    url: 'https://github.com/rupaya/governance'
 tags:
   - name: Config
     description: Get Governance Application Configuration

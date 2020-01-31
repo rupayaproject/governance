@@ -16,7 +16,7 @@ async function createWindow () {
         win.maximize()
 
         // Specify entry point to default entry point of vue.js
-        win.loadURL('https://master.testnet.tomochain.com')
+        win.loadURL('https://master.testnet.rupaya.io')
     } else {
         win.maximize()
         return dialog.showMessageBox({

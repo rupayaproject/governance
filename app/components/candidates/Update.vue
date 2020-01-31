@@ -329,7 +329,7 @@ export default {
                 self.message = data.message
                 self.id = data.id
                 self.qrCode = encodeURI(
-                    'tomochain:sign?message=' + self.message +
+                    'rupaya:sign?message=' + self.message +
                     '&submitURL=' + data.url
                 )
             }

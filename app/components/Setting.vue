@@ -391,7 +391,7 @@ export default {
             balance: 0,
             chainConfig: {},
             networks: {
-                // mainnet: 'https://core.tomochain.com',
+                // mainnet: 'https://core.rupaya.io',
                 rpc: 'https://socket.rupaya.io',
                 tomowallet: 'https://wallet.rupaya.io'
             },
@@ -454,7 +454,7 @@ export default {
                         contract = self.TomoValidator
                         self.gasPrice = await self.web3.eth.getGasPrice()
                     } catch (error) {
-                        throw Error('Make sure you choose correct tomochain network.')
+                        throw Error('Make sure you choose correct rupaya network.')
                     }
                 }
 
@@ -676,11 +676,11 @@ export default {
             const { data } = await axios.get('/api/auth/generateLoginQR')
             this.id = data.id
             this.qrCode = encodeURI(
-                'tomochain:login?message=' + data.message +
+                'rupaya:login?message=' + data.message +
                 '&submitURL=' + data.url
             )
             this.qrCodeApp = encodeURI(
-                'tomochain://login?message=' + data.message +
+                'rupaya://login?message=' + data.message +
                 '&submitURL=' + data.url
             )
             return true
@@ -735,7 +735,7 @@ export default {
                 if (self.interval) {
                     clearInterval(self.interval)
                 }
-                self.$toasted.show('Make sure you choose correct tomochain network.', {
+                self.$toasted.show('Make sure you choose correct rupaya network.', {
                     type : 'error'
                 })
             }
@@ -801,7 +801,7 @@ export default {
                     }
                 })
             } else {
-                this.$toasted.show('Not enough TOMO for transaction fee', {
+                this.$toasted.show('Not enough RUPX for transaction fee', {
                     type : 'info'
                 })
             }

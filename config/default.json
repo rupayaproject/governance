@@ -7,13 +7,13 @@
         "level": "debug"
     },
     "cors": [
-        "https://swagger.tomochain.com"
+        "https://swagger.rupaya.io"
     ],
     "blockchain": {
         "rpc": "https://socket.rupaya.io",
         "ws": "ws://ws.rupaya.io/ws/",
-        "internalRpc": "",
-        "internalWs": "",
+        "internalRpc": "http://127.0.0.1:7050",
+        "internalWs": "ws://127.0.0.1:8050",
         "networkId": 308,
         "epoch": 900,
         "blockTime": 2,

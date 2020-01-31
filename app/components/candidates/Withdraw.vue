@@ -163,7 +163,7 @@ export default {
             self.id = generatedMess.data.id
 
             self.qrCode = encodeURI(
-                'tomochain:withdraw?amount=' + amount + '&' + 'block=' + self.blockNumber +
+                'rupaya:withdraw?amount=' + amount + '&' + 'block=' + self.blockNumber +
                 '&index=' + self.index +
                 '&submitURL=' + generatedMess.data.url
             )

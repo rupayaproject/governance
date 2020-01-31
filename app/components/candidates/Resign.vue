@@ -237,7 +237,7 @@ export default {
                     self.id = generatedMess.data.id
 
                     self.qrCode = encodeURI(
-                        'tomochain:resign?candidate=' + self.coinbase +
+                        'rupaya:resign?candidate=' + self.coinbase +
                         '&submitURL=' + generatedMess.data.url
                     )
                     self.$refs.resignModal.show()
