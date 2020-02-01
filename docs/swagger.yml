@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   version: 1.3.3
   title: Governance APIs
-  description: Happy to code Governance APIs
+  description: Rupaya Governance APIs
   license:
     name: Github
     url: 'https://github.com/rupaya/governance'
@@ -455,7 +455,7 @@ definitions:
     properties:
       blockchain:
         type: object
-        description: Tomochain's configurations
+        description: Rupaya's configurations
         properties:
           rpc:
             type: string
@@ -472,7 +472,7 @@ definitions:
             description: Block time
       explorerUrl:
         type: string
-        description: Tomoscan's API
+        description: Scan's API
       GA:
         type: string
         description: Google Analytic code
