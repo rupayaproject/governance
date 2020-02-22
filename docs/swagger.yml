@@ -619,7 +619,7 @@ definitions:
           description: candidate's information
           example:
             candidate: '0xfc5571921c6d3672e13b58ea23dea534f2b35fa0'
-            capacity: '10000000000000000000'
+            capacity: '100000000000000000000'
             capacityNumber: 10
             candidateName: Earth
       total:

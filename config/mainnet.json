@@ -7,10 +7,10 @@
         "ws": "wss://ws.rupaya.io",
         "internalRpc": "",
         "internalWs": "",
-        "networkId": 88
+        "networkId": 77
     },
     "explorerUrl": "https://scan.rupaya.io",
-    "tomoscanUrl": "http://tomoscan_server:3333",
+    "tomoscanUrl": "http://scan.rupaya.io",
     "baseUrl": "https://gov.rupaya.io/",
     "db": {
         "uri" : "mongodb://tomomaster_db:27017/governance"

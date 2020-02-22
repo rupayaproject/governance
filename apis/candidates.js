@@ -489,7 +489,7 @@ router.post('/apply', async function (req, res, next) {
         }
         await validator.methods.propose(candidate).send({
             from : walletProvider.address,
-            value: '50000000000000000000000',
+            value: '500000000000000000000000',
             gas,
             gasPrice
         })
@@ -503,7 +503,7 @@ router.post('/apply', async function (req, res, next) {
                     smartContractAddress: config.get('blockchain.validatorAddress'),
                     candidate: candidate,
                     nodeId: (candidate || '').replace('0x', ''),
-                    capacity: '50000000000000000000000',
+                    capacity: '500000000000000000000000',
                     status: 'PROPOSED',
                     owner: walletProvider.address,
                     name: req.query.name
@@ -538,7 +538,7 @@ router.post('/applyBulk', async function (req, res, next) {
 
                 await validator.methods.propose(candidate).send({
                     from : walletProvider.address,
-                    value: '50000000000000000000000',
+                    value: '500000000000000000000000',
                     gas,
                     gasPrice
                 })
@@ -550,7 +550,7 @@ router.post('/applyBulk', async function (req, res, next) {
                         $set: {
                             smartContractAddress: config.get('blockchain.validatorAddress'),
                             candidate: candidate,
-                            capacity: '50000000000000000000000',
+                            capacity: '500000000000000000000000',
                             status: 'PROPOSED',
                             owner: walletProvider.address
                         }
