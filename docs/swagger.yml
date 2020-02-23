@@ -940,7 +940,7 @@ definitions:
             __v: 0
             blockNumber: 3899700
             createdAt: '2019-04-11T03:00:22.636Z'
-            networkId: 88
+            networkId: 77
             updatedAt: '2019-04-11T03:22:16.136Z'
       blockNumber:
         type: number

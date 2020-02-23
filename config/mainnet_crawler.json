@@ -7,7 +7,7 @@
         "ws": "ws://blockchain-proxy:8546",
         "internalRpc": "",
         "internalWs": "",
-        "networkId": 88
+        "networkId": 77
     },
     "db": {
         "uri" : "mongodb://tomomaster_db:27017/governance"
