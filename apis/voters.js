@@ -497,14 +497,14 @@ router.get('/annualReward', [
             const mnRWEpoch = masternodeReward.multipliedBy(0.4)
             // master staking reward
             const mnStakingEpoch = masternodeReward.multipliedBy(0.5)
-                .multipliedBy(50000).dividedBy(capacity)
+                .multipliedBy(500000).dividedBy(capacity)
 
             // calculate reward 1 year
             voterRW1Year = voterRWEpoch.multipliedBy(epochYear)
             mnRW1Year = mnRWEpoch.multipliedBy(epochYear)
             mnStakingYear = mnStakingEpoch.multipliedBy(epochYear)
             const voterROI = voterRW1Year.div(voterAmount).multipliedBy(100).toNumber()
-            const mnROI = (mnRW1Year.plus(mnStakingYear)).dividedBy(50000).multipliedBy(100).toNumber()
+            const mnROI = (mnRW1Year.plus(mnStakingYear)).dividedBy(500000).multipliedBy(100).toNumber()
 
             return res.json({
                 epochDuration,
@@ -569,16 +569,16 @@ router.get('/averageroi', [], async (req, res, next) => {
         const mnStakingYear = masternodeReward.multipliedBy(0.4).multipliedBy(epochYear)
         // master staking reward
         const top1MNStakingYear = masternodeReward.multipliedBy(0.5)
-            .multipliedBy(50000).dividedBy(top1MN[0].capacityNumber).multipliedBy(epochYear)
+            .multipliedBy(500000).dividedBy(top1MN[0].capacityNumber).multipliedBy(epochYear)
         const lastMNStakingYear = masternodeReward.multipliedBy(0.5)
-            .multipliedBy(50000).dividedBy(lastMN[0].capacityNumber).multipliedBy(epochYear)
+            .multipliedBy(500000).dividedBy(lastMN[0].capacityNumber).multipliedBy(epochYear)
 
         // calculate percentage
 
         const top1MNVoterROI = top1MNVoterRW1Year.div(voterAmount).multipliedBy(100)
         const lastMNVoterROI = lastMNVoterRW1Year.div(voterAmount).multipliedBy(100)
-        const top1MNOwnerROI = (top1MNStakingYear.plus(mnStakingYear)).dividedBy(50000).multipliedBy(100)
-        const lastMNOwnerROI = (lastMNStakingYear.plus(mnStakingYear)).dividedBy(50000).multipliedBy(100)
+        const top1MNOwnerROI = (top1MNStakingYear.plus(mnStakingYear)).dividedBy(500000).multipliedBy(100)
+        const lastMNOwnerROI = (lastMNStakingYear.plus(mnStakingYear)).dividedBy(500000).multipliedBy(100)
 
         const averageStakingROI = (top1MNVoterROI.plus(lastMNVoterROI)).dividedBy(2).toNumber()
         const averageMNOwnerROI = (top1MNOwnerROI.plus(lastMNOwnerROI)).dividedBy(2).toNumber()

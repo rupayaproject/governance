@@ -485,7 +485,7 @@ export default {
         validateMaxAmount (value) {
             this.converted = new BigNumber(value)
             const votedValue = new BigNumber(this.voted)
-            this.maxValue = (this.isOwner) ? votedValue.minus(new BigNumber(50000)) : votedValue
+            this.maxValue = (this.isOwner) ? votedValue.minus(new BigNumber(500000)) : votedValue
             this.limitedUnvote = this.maxValue.toString(10)
             if (this.converted.isGreaterThan(this.maxValue)) {
                 return true
@@ -514,8 +514,8 @@ export default {
         async unvoteAll () {
             if (this.isOwner) {
                 let voted = new BigNumber(this.voted)
-                if (voted.isGreaterThan(new BigNumber(50000))) {
-                    this.unvoteValue = voted.minus(new BigNumber(50000)).toString(10)
+                if (voted.isGreaterThan(new BigNumber(500000))) {
+                    this.unvoteValue = voted.minus(new BigNumber(500000)).toString(10)
                 }
             } else this.unvoteValue = this.voted.toString(10)
         },
