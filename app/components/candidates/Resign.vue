@@ -47,7 +47,7 @@
             ok-title="Yes"
             cancel-title="No"
             @ok="resignValidation()">
-            <p>If you resign, you will be able to withdraw all your deposit after around 30 days.</p>
+            <p>If you resign, you will be able to withdraw all your deposit after around 90 days.</p>
         </b-modal>
         <b-modal
             ref="resignModal"
