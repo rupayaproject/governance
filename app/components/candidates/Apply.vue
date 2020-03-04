@@ -11,7 +11,7 @@
                 <ul class="tomo-list list-unstyled">
                     <li class="tomo-list__item">
                         <i class="tm-tomo tomo-list__icon" />
-                        <span class="tomo-list__text">You have to deposit at least 50,000 RUPX</span>
+                        <span class="tomo-list__text">You have to deposit at least 500,000RUPX</span>
                     </li>
                     <li class="tomo-list__item">
                         <i class="tm-lock tomo-list__icon" />
@@ -47,7 +47,7 @@
                                 class="text-danger">Required field</span>
                             <span
                                 v-else-if="$v.applyValue.$dirty && !$v.applyValue.minValue"
-                                class="text-danger">Must be greater than 50,000 RUPX</span>
+                                class="text-danger">Must be greater than 500,000RUPX</span>
                         </b-input-group>
                     </b-form-group>
                     <b-form-group
