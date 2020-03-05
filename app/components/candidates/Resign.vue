@@ -53,7 +53,7 @@
             ref="resignModal"
             class="tomo-modal"
             centered
-            title="Scan this QR code by TomoWallet"
+            title="Scan this QR code by RupxWallet"
             hide-footer>
             <div
                 v-if="provider === 'tomowallet'"

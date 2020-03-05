@@ -25,7 +25,7 @@ module.exports = function(deployer) {
         '500000000000000000000000',
         '500000000000000000000000'
     ]
-    let firstOwner = '0xe4fe4385cebf8066f8e0df6c399c1f2ed94bf66d'
+    let firstOwner = '0x99e39cb1819b9676391b34b7e8e321599157c65'
     return deployer.deploy(TomoValidator, candidates, caps, firstOwner, minCandidateCap, minVoterCap, maxValidatorNumber, candidateWithdrawDelay, voterWithdrawDelay).then((tv) => {
         return  deployer.deploy(TomoRandomize)
     }). then(() => {

@@ -24,7 +24,7 @@
                                 class="form-control"
                                 @change="onChangeSelect">
                                 <option
-                                    value="tomowallet">TomoWallet (Recommended)</option>
+                                    value="tomowallet">RupxWallet (Recommended)</option>
                                 <option
                                     value="custom">PrivateKey/MNEMONIC</option>
                                 <option
@@ -113,7 +113,7 @@
                             </b-button>
                         </div>
                         <div>
-                            <b>In case you do not have TomoWallet, download here</b>
+                            <b>In case you do not have RupxWallet, download here</b>
                         </div>
                         <div
                             style="margin-top: 5px">
@@ -184,7 +184,7 @@
                             <a
                                 href="https://metamask.io/"
                                 target="_blank">Metamask Extension</a>
-                            then connect it to Tomochain Mainnet or Testnet.</p>
+                            then connect it to Rupaya Mainnet or Testnet.</p>
                     </div>
                     <div class="buttons text-right">
                         <b-button
