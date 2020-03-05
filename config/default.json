@@ -38,8 +38,8 @@
         "minCandidateCap": "5000000000000000000000000",
         "minVoterCap": "100000000000000000000",
         "maxValidatorNumber": 150,
-        "candidateWithdrawDelay": 100,
-        "voterWithdrawDelay": 100,
+        "candidateWithdrawDelay": 300,
+        "voterWithdrawDelay": 300,
         "epochNumber": 900
     },
     "GA": "UA-124427827-2",
