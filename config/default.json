@@ -12,8 +12,8 @@
     "blockchain": {
         "rpc": "https://socket.rupaya.io",
         "ws": "ws://ws.rupaya.io/ws/",
-        "internalRpc": "http://127.0.0.1:7050",
-        "internalWs": "ws://127.0.0.1:8050",
+        "internalRpc": "http://rpcws:7050",
+        "internalWs": "ws://rpcws:8050",
         "networkId": 77,
         "epoch": 900,
         "blockTime": 2,
